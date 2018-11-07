@@ -1,0 +1,410 @@
+@charset "utf-8"
+* {
+		font-family: Arial;
+	    padding: 0;
+	    margin: 0;
+	}
+	a:hover {
+	    color: red;
+	    text-decoration: none;
+		transition:1s;
+	}
+
+	a {
+	    color: darkblue;
+	    text-decoration: none;
+	}
+
+	nav {
+	    transform: translate(-50%, 0);
+	    position: absolute;
+	    left: 50%;
+	    top:-15px;
+	}
+
+	nav ul {
+	    color: white;
+	    list-style: none;
+	}
+
+	nav ul li {
+	    display: inline;
+	    line-height: 50px;
+	    text-transform: uppercase;
+	    margin-right: 10px;
+	}
+
+	nav ul li a {
+	    color: white;
+	}
+
+
+	header {
+	    border: 5px solid #2C86EE;
+	    width: 50%;
+	    height: 50px;
+	    background-color: #2C86EE;
+	    position: fixed;
+	    left: 50%;
+			top:0px;
+	    transform: translate(-50%, 0);
+	    border-radius: 30px;
+	    z-index: 2;
+	}
+
+	#background {
+	    position: fixed;
+	    top: 0px;
+	    left: 0px;
+	    width: 100%;
+	    height: 100%;
+	    background-image: url(background1.png);
+	    background-repeat: repeat;
+	    opacity: 0.2;
+	    z-index: 0;
+	}
+	#logo {
+		transform:translate(-50%,0);
+	    position: fixed;
+	    z-index: 2;
+	    left:3%;
+		top:1%;
+	}
+
+	#logo img {
+	    height: 50%;
+	    width: 50%;
+	}
+	.mainpage {
+		z-index:1;
+		position:absolute;
+		transform: translate(-50%,-50%);
+		left:50%;
+		top:40%;
+		transition:2s;
+		transition-delay:15s;
+	}
+	.parag{
+		font:bold 30px Arial;
+		color:red;
+		z-index:1;
+		position:absolute;
+		transform: translate(-50%,-50%);
+		left:50%;
+		top:47%;
+		transition:2s;
+		transition-delay:15s;
+		opacity:0;
+		visibility:hidden;
+	}
+	.name{
+		font:bold 20px Arial;
+		color:red;
+		z-index:1;
+		position:absolute;
+		left:4%;
+		top:43%;
+		transform: rotate(-90deg);
+		transition:2s;
+	}
+	.info{
+		text-align: center;
+		color:red;
+		font:bold 30px Arial;
+		transform: translate(-50%,-50%);
+		position:absolute;
+		left:50%;
+		top:64%;
+		transition: 2s;
+		opacity:0;
+		visibility:hidden;
+	}
+
+.ash1 img{
+	border: 2px solid;
+	border-color:yellow;
+	border-radius: 100px;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	top:47%;
+	left:13%;
+	width:113px;
+	transition: 2s;
+}
+.ash1 img:hover{
+	border-color:red;
+	position:absolute;
+	transform: translate(-50%,-50%);
+	top:47%;
+	left:13%;
+	width:168px;
+}
+.ash2 img{
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:13%;
+	width:126px;
+	transition: 2s;
+	opacity:1;
+	visibility: visible;
+}
+.ash2{
+	transition-delay: 8s;
+}
+.ash2 img:hover{
+	border-color:red;
+	width:189px;
+}
+.ash1:hover ~ .ash2{
+	opacity:0;
+	visibility:hidden;
+	transition: 2s;
+	transition-delay: 0s;
+}
+.gen1 {
+	transition-delay: 8s;
+}
+.gen1 img{
+	position:absolute;
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:28%;
+	width:150px;
+	transition:2s;
+	opacity:0;
+	visibility: hidden;
+	transition-delay: 8s;
+}
+
+.ash1:hover ~ .gen1{
+	transition: 2s;
+	transition-delay:0s;
+	opacity:0;
+	visibility:hidden;
+}
+.ash2:hover ~ .gen1 img{
+	transition: 2s;
+	transition-delay: 0s;
+	opacity:1;
+	visibility:visible;
+}
+.gen2 {
+	transition-delay: 8s;
+}
+.gen2 img{
+	position:absolute;
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:37%;
+	width:105px;
+	transition:2s;
+	opacity:0;
+	visibility: hidden;
+	transition-delay: 8s;
+}
+
+.ash1:hover ~ .gen2{
+	transition: 2s;
+	transition-delay:0s;
+	opacity:0;
+	visibility:hidden;
+}
+.ash2:hover ~ .gen2 img{
+	transition: 2s;
+	transition-delay: 0s;
+	opacity:1;
+	visibility:visible;
+}
+.gen3 {
+	transition-delay: 8s;
+}
+.gen3 img{
+	position:absolute;
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:46%;
+	width:150px;
+	transition:2s;
+	opacity:0;
+	visibility: hidden;
+	transition-delay: 8s;
+}
+
+.ash1:hover ~ .gen3{
+	transition: 2s;
+	transition-delay:0s;
+	opacity:0;
+	visibility:hidden;
+}
+.ash2:hover ~ .gen3 img{
+	transition: 2s;
+	transition-delay: 0s;
+	opacity:1;
+	visibility:visible;
+}
+.gen4 {
+	transition-delay: 8s;
+}
+.gen4 img{
+	position:absolute;
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:55%;
+	width:100px;
+	transition:2s;
+	opacity:0;
+	visibility: hidden;
+	transition-delay: 8s;
+}
+
+.ash1:hover ~ .gen4{
+	transition: 2s;
+	transition-delay:0;
+	opacity:0;
+	visibility:hidden;
+}
+.ash2:hover ~ .gen4 img{
+	transition: 2s;
+	transition-delay: 0s;
+	opacity:1;
+	visibility:visible;
+}
+.gen5 {
+	transition-delay: 8s;
+}
+.gen5 img{
+	position:absolute;
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:63%;
+	width:130px;
+	transition:2s;
+	opacity:0;
+	visibility: hidden;
+	transition-delay: 8s;
+}
+
+.ash1:hover ~ .gen5{
+	transition: 2s;
+	transition-delay:0;
+	opacity:0;
+	visibility:hidden;
+}
+.ash2:hover ~ .gen5 img{
+	transition: 2s;
+	transition-delay: 0s;
+	opacity:1;
+	visibility:visible;
+}
+.gen6 {
+	transition-delay: 8s;
+}
+.gen6 img{
+	position:absolute;
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:73%;
+	width:150px;
+	transition:2s;
+	opacity:0;
+	visibility: hidden;
+	transition-delay: 8s;
+}
+
+.ash1:hover ~ .gen6{
+	transition: 2s;
+	transition-delay:0;
+	opacity:0;
+	visibility:hidden;
+}
+.ash2:hover ~ .gen6 img{
+	transition: 2s;
+	transition-delay: 0s;
+	opacity:1;
+	visibility:visible;
+}
+.gen7 {
+	transition-delay: 8s;
+}
+.gen7 img{
+	position:absolute;
+	transform: translate(-50%,-50%);
+	border: 2px solid;
+	border-color:yellow;
+	border-radius:100px;
+	position: absolute;
+	top:80%;
+	left:83%;
+	width:122px;
+	transition:2s;
+	opacity:0;
+	visibility: hidden;
+	transition-delay: 8s;
+}
+
+.ash1:hover ~ .gen7{
+	transition: 2s;
+	transition-delay:0;
+	opacity:0;
+	visibility:hidden;
+}
+.ash2:hover ~ .gen7 img{
+	transition: 2s;
+	transition-delay: 0s;
+	opacity:1;
+	visibility:visible;
+}
+.ash1:hover ~ .mainpage{
+	opacity:0;
+	visibility:hidden;
+	transition:2s;
+	transition-delay:0s;
+}
+.ash1:hover ~ .parag{
+	opacity:1;
+	visibility:visible;
+	transition:2s;
+	transition-delay:0s;
+}
+.ash1:hover ~ .name{
+	font:bold 30px Arial;
+	transform: translate(-50%,-50%);
+	position:absolute;
+	left:0%;
+	top:41%;
+	transform: rotate(-90deg);
+	transition: 2s;
+}
+.ash2:hover ~ .info{
+	transition: 2s;
+	opacity:1;
+	visibility:visible;
+}
